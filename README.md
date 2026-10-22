@@ -16,7 +16,35 @@ Planning/design is documented as **Experiment 0**. Implementation milestones mus
 Start with [`AGENTS.md`](AGENTS.md), then [`docs/ROADMAP.md`](docs/ROADMAP.md). Project specification: [`docs/PRODUCT.md`](docs/PRODUCT.md). Database: [`docs/DATA_MODEL.md`](docs/DATA_MODEL.md). Lab evidence: [`docs/LAB_WORKFLOW.md`](docs/LAB_WORKFLOW.md).
 
 ## Local setup
-The commands below apply **after** the `client/` and `server/` packages have been initialized:
+
+The current repository contains the Experiment 2 React/Vite event page at `/lab/experiment-2/events`.
+
+### Run from Windows Command Prompt (`cmd.exe`)
+
+Open Command Prompt and run:
+
+```bat
+cd /d C:\Users\sujal\projects\fsd
+npm.cmd install
+npm.cmd run dev
+```
+
+Open the URL shown by Vite, normally:
+
+```text
+http://localhost:5173/lab/experiment-2/events
+```
+
+To create a production build:
+
+```bat
+cd /d C:\Users\sujal\projects\fsd
+npm.cmd run build
+```
+
+To stop the development server, press `Ctrl+C` in Command Prompt.
+
+The commands below apply to the planned full-stack packages after the `client/` and `server/` packages have been initialized:
 
 ```powershell
 npm --prefix client install
